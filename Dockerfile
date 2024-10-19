@@ -1,5 +1,5 @@
 FROM docker.io/library/node:lts-alpine AS base
-
+ENV NUXT_PUBLIC_DEFAULT_SERVER=elk.n21.org.uk
 # Prepare work directory
 WORKDIR /elk
 
