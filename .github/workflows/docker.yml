@@ -1,13 +1,14 @@
 name: build & push docker container
 on:
-  push:
-    branches:
-      - main
-    tags:
-      - '*'
-  pull_request:
-    branches:
-      - main
+  workflow_dispatch: {}
+#  push:
+#    branches:
+#      - main
+#    tags:
+#      - '*'
+#  pull_request:
+#    branches:
+#      - main
 jobs:
   docker:
     runs-on: ubuntu-latest
